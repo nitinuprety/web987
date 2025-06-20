@@ -5795,6 +5795,20 @@ input.main-search-input::placeholder {
   }
 }
 
+.section-padding-3 {
+  padding: 70px 0;
+}
+@media (max-width: 1199px) {
+  .section-padding-3 {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 991px) {
+  .section-padding-3 {
+    padding: 30px 0;
+  }
+}
+
 .footer-bg {
   background-color: #101012;
 }

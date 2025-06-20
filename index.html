@@ -31,8 +31,10 @@
         <link rel="stylesheet" href="assets/css/color.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Slider.css >>-->
+        <link rel="stylesheet" href="assets/css/slider.css">
     </head>
-    <body class="body">
+    <body>
 
         <!-- Preloader Start -->
         <div id="preloader" class="preloader">
@@ -116,7 +118,7 @@
         <div class="offcanvas__overlay"></div>
 
         <!-- Header Section Start -->
-        <header id="header-sticky" class="header-1">
+        <header id="header-sticky" class="header-2">
             <div class="container-fluid">
                 <div class="mega-menu-wrapper">
                     <div class="header-main">
@@ -135,10 +137,10 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="about.html">About Us</a>
+                                                <a href="#">About Us</a>
                                             </li>
                                             <li  class="has-dropdown">
-                                                <a href="service.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+                                                <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
                                                 <ul class="submenu">
                                                     <li><a href="#">Beauty Retouching</a></li>
                                                     <li><a href="#">Clipping Path Services</a></li>
@@ -149,10 +151,10 @@
                                                 </ul>
                                                 </li>
                                             <li>
-                                                <a href="gallary.html">Gallary</a>
+                                                <a href="#">Gallary</a>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="#">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -162,7 +164,7 @@
                         
                         <div class="mob-view">
                             <div class="header-button mt-2">
-                                <a href="contact.html" style="padding:11px 20px" class="theme-btn text-center">
+                                <a href="#" style="padding:11px 20px" class="theme-btn text-center">
                                     Get A Quote
                                 </a>
                             </div>
@@ -181,29 +183,8 @@
             </div>
         </header>
 
-        <!-- Search Area Start -->
-        <div class="search-wrap">
-            <div class="search-inner">
-                <i class="fas fa-times search-close" id="search-close"></i>
-                <div class="search-cell">
-                    <form method="get">
-                        <div class="search-field-holder">
-                            <input type="search" class="main-search-input" placeholder="Search...">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
         <!-- Hero Sction Start -->
-        <section class="hero-secton hero-1 bg-cover" style="background-image: url('assets/img/hero/hero-bg-3.png');padding-top:100px;">
-            <div class="">
-                <img style="width: 100%; position: relative;" src="assets/img/paralax-bg-2.jpg" alt="img">
-            </div>
-        </section>
-
-
-        <section class="hero-secton hero-1 bg-cover" style="padding-top: 150px; padding-bottom: 50px; background-image: url('assets/img/hero/hero-bg-3.png');">
+        <section class="hero-secton hero-1 bg-cover" style="padding-top: 150px; padding-bottom: 50px; background-image: url('assets/img/hero/hero-bg.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -220,281 +201,853 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="hero-image img-custom-anim-left bg-cover" style="background-image: url('assets/img/hero/hero-1.png');">
-            </div> -->
         </section>
-        
-        <!-- About  Sction Start -->
-        <section class="about-section section-bg fix" style="padding-top: 50px; background-color: white;">
-            <div class="color-bg">
-                <img src="assets/img/about/color-bg-shape.png" alt="img">
-            </div>
-            <div class="color-bg-2">
-                <img src="assets/img/about/color-bg-shape-2.png" alt="img">
-            </div>
+        <!-- <section class="hero-secton section-padding hero-2 bg-cover" style="background-image: url('assets/img/hero/hero-bg.jpg');">
             <div class="container">
-                <div class="section-title ml-200">
-                    <h6 class="wow fadeInUp">
-                        <img src="assets/img/star.png" alt="img"> Who we are
-                    </h6>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Explore the AI power <br>
-                        <span>& our <b>innovative</b> solutions</span>
-                    </h2>
-                </div>
-                <div class="about-wrapper mt-4 mt-md-0">
-                    <ul class="nav">
-                        <li class="nav-item wow fadeInUp" data-wow-delay=".3s">
-                            <a href="#Mission" data-bs-toggle="tab" class="nav-link">
-                                Our Mission
-                            </a>
-                        </li>
-                        <li class="nav-item wow fadeInUp" data-wow-delay=".5s">
-                            <a href="#Vision" data-bs-toggle="tab" class="nav-link active">
-                                Our Vision
-                            </a>
-                        </li>
-                        <li class="nav-item wow fadeInUp" data-wow-delay=".5s">
-                            <a href="#Feature" data-bs-toggle="tab" class="nav-link">
-                                Key Feature
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="Mission" class="tab-pane fade">
-                            <div class="about-items">
-                                <div class="about-content">
-                                    <p>
-                                        Duise sagittis accumsan magna on adipiscine laoreet ultrices magna consectetuer eiaculis rutrum morbie habitasse orcids libero porttitor molestie mollise
-                                    </p>
-                                    <ul class="list-items">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
-                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
-                                              </svg>
-        
-                                             <span>Real-World Transformations</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
-                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
-                                              </svg>
-        
-                                             <span>Innovative AI Solutions</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
-                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
-                                              </svg>
-        
-                                             <span>Bot Brains, Business Boosters</span>
-                                        </li>
-                                    </ul>
-                                    <a href="about.html" class="theme-btn">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
-                                </div>
-                                <div class="about-image">
-                                    <img src="assets/img/about/01.jpg" alt="img">
-                                </div>
-                            </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="hero-content">
+                            <h1 class="wow fadeInUp" data-wow-delay=".3s">
+                                <span>Revolutionize</span>
+                                customer interplay 
+                                for AI <span>chatbots</span>
+                            </h1>
+                            <p class="wow fadeInUp" data-wow-delay=".5s">
+                                Unlock the power of AI to generate high-quality images <br> and videos in less than minutes
+                            </p>
+                            <a href="index-2.html" class="theme-btn wow fadeInUp" data-wow-delay=".7s">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
                         </div>
-                        <div id="Vision" class="tab-pane fade show active">
-                            <div class="about-items">
-                                <div class="about-content">
-                                    <p class="wow fadeInUp" data-wow-delay=".3s">
-                                        Duise sagittis accumsan magna on adipiscine laoreet ultrices magna consectetuer eiaculis rutrum morbie habitasse orcids libero porttitor molestie mollise
-                                    </p>
-                                    <ul class="list-items wow fadeInUp" data-wow-delay=".5s">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
-                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
-                                              </svg>
-        
-                                             <span>Real-World Transformations</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
-                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
-                                              </svg>
-        
-                                             <span>Innovative AI Solutions</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
-                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
-                                              </svg>
-        
-                                             <span>Bot Brains, Business Boosters</span>
-                                        </li>
-                                    </ul>
-                                    <a href="about.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
-                                </div>
-                                <div class="about-image wow fadeInUp" data-wow-delay=".3s">
-                                    <img src="assets/img/about/01.jpg" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="Feature" class="tab-pane fade">
-                            <div class="about-items">
-                                <div class="about-content">
-                                    <p>
-                                        Duise sagittis accumsan magna on adipiscine laoreet ultrices magna consectetuer eiaculis rutrum morbie habitasse orcids libero porttitor molestie mollise
-                                    </p>
-                                    <ul class="list-items">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
-                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
-                                              </svg>
-        
-                                             <span>Real-World Transformations</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
-                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
-                                              </svg>
-        
-                                             <span>Innovative AI Solutions</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
-                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
-                                              </svg>
-        
-                                             <span>Bot Brains, Business Boosters</span>
-                                        </li>
-                                    </ul>
-                                    <a href="about.html" class="theme-btn">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
-                                </div>
-                                <div class="about-image">
-                                    <img src="assets/img/about/01.jpg" alt="img">
-                                </div>
+                    </div>
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="hero-image">
+                            <img src="assets/img/hero/hero.png" alt="img">
+                            <div class="circle-shape">
+                                <img src="assets/img/hero/circle-shape.png" alt="img">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="counter-section section-padding pb-0">
-                <div class="container">
-                    <div class="counter-wrapper">
-                        <div class="counter-items wow fadeInUp" data-wow-delay=".3s">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h2><span class="count">236</span></h2>
-                                <p>Finished Projects</p>
-                            </div>
-                        </div>
-                        <div class="counter-items wow fadeInUp" data-wow-delay=".5s">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h2><span class="count">236</span></h2>
-                                <p>Finished Projects</p>
-                            </div>
-                        </div>
-                        <div class="counter-items wow fadeInUp" data-wow-delay=".7s">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h2><span class="count">236</span></h2>
-                                <p>Finished Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section> -->
 
-        <!-- Service Sction Start -->
-        <section class="service-section fix section-padding">
+
+        <!-- Before After Sction Start -->
+        <section class="service-section fix section-padding-3">
             <div class="container">
-                <div class="section-title text-center">
-                    <h6 class="wow fadeInUp">
-                        <img src="assets/img/star.png" alt="img">
-                        popular services
-                    </h6>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Exclusive AI-powered <br>
-                        <span>idea & <b>automation</b> services</span>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="service-box-items-2" style="padding:10px; margin:5px; background-color: #898AC4; box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                            <main class="slider-main">
+                                <div class="slider-container">
+                                    <div class="slider-image-container">
+                                    <img
+                                        class="slider-image-before slider-image"
+                                    src="assets/img/slider/002.jpg"
+                                        alt="color photo"
+                                    />
+                                    <img
+                                        class="slider-image-after slider-image"
+                                        src="assets/img/slider/002a.jpg"
+                                        alt="black and white"
+                                    />
+                                    </div>
+                                    <!-- step="10" -->
+                                    <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Percentage of before photo shown"
+                                    class="slider"
+                                    />
+                                    <div class="slider-line" aria-hidden="true"></div>
+                                    <div class="slider-button" aria-hidden="true">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                    >
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line
+                                        x1="128"
+                                        y1="40"
+                                        x2="128"
+                                        y2="216"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <line
+                                        x1="96"
+                                        y1="128"
+                                        x2="16"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="48 160 16 128 48 96"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                        <line
+                                        x1="160"
+                                        y1="128"
+                                        x2="240"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="208 96 240 128 208 160"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                    </svg>
+                                    </div>
+                                </div>
+                            </main>
+                            <div class="content">
+                                <h3 style="color: white;">Beauty Retouching</h3>
+                                <p style="color: white;">*Description*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="service-box-items-2" style="padding:10px; margin:5px; background-color: #898AC4; box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                            <main class="slider-main">
+                                <div class="slider-container">
+                                    <div class="slider-image-container">
+                                    <img
+                                        class="slider-image-before slider-image"
+                                    src="assets/img/slider/003.jpg"
+                                        alt="color photo"
+                                    />
+                                    <img
+                                        class="slider-image-after slider-image"
+                                        src="assets/img/slider/003a.jpg"
+                                        alt="black and white"
+                                    />
+                                    </div>
+                                    <!-- step="10" -->
+                                    <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Percentage of before photo shown"
+                                    class="slider"
+                                    />
+                                    <div class="slider-line" aria-hidden="true"></div>
+                                    <div class="slider-button" aria-hidden="true">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                    >
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line
+                                        x1="128"
+                                        y1="40"
+                                        x2="128"
+                                        y2="216"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <line
+                                        x1="96"
+                                        y1="128"
+                                        x2="16"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="48 160 16 128 48 96"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                        <line
+                                        x1="160"
+                                        y1="128"
+                                        x2="240"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="208 96 240 128 208 160"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                    </svg>
+                                    </div>
+                                </div>
+                            </main>
+                            <div class="content">
+                                <h3 style="color: white;">Cliping Path Services</h3>
+                                <p style="color: white;">*Description*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="service-box-items-2" style="padding:10px; margin:5px; background-color: #898AC4; box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                            <main class="slider-main">
+                                <div class="slider-container">
+                                    <div class="slider-image-container">
+                                    <img
+                                        class="slider-image-before slider-image"
+                                    src="assets/img/slider/001.jpg"
+                                        alt="color photo"
+                                    />
+                                    <img
+                                        class="slider-image-after slider-image"
+                                        src="assets/img/slider/001a.jpg"
+                                        alt="black and white"
+                                    />
+                                    </div>
+                                    <!-- step="10" -->
+                                    <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Percentage of before photo shown"
+                                    class="slider"
+                                    />
+                                    <div class="slider-line" aria-hidden="true"></div>
+                                    <div class="slider-button" aria-hidden="true">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                    >
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line
+                                        x1="128"
+                                        y1="40"
+                                        x2="128"
+                                        y2="216"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <line
+                                        x1="96"
+                                        y1="128"
+                                        x2="16"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="48 160 16 128 48 96"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                        <line
+                                        x1="160"
+                                        y1="128"
+                                        x2="240"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="208 96 240 128 208 160"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                    </svg>
+                                    </div>
+                                </div>
+                            </main>
+                            <div class="content">
+                                <h3 style="color: white;">Automobile Retouching</h3>
+                                <p style="color: white;">*Description*</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="service-box-items-2" style="padding:10px; margin:5px; background-color: #898AC4; box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                            <main class="slider-main">
+                                <div class="slider-container">
+                                    <div class="slider-image-container">
+                                    <img
+                                        class="slider-image-before slider-image"
+                                    src="assets/img/slider/before.png"
+                                        alt="color photo"
+                                    />
+                                    <img
+                                        class="slider-image-after slider-image"
+                                        src="assets/img/slider/after.png"
+                                        alt="black and white"
+                                    />
+                                    </div>
+                                    <!-- step="10" -->
+                                    <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Percentage of before photo shown"
+                                    class="slider"
+                                    />
+                                    <div class="slider-line" aria-hidden="true"></div>
+                                    <div class="slider-button" aria-hidden="true">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                    >
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line
+                                        x1="128"
+                                        y1="40"
+                                        x2="128"
+                                        y2="216"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <line
+                                        x1="96"
+                                        y1="128"
+                                        x2="16"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="48 160 16 128 48 96"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                        <line
+                                        x1="160"
+                                        y1="128"
+                                        x2="240"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="208 96 240 128 208 160"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                    </svg>
+                                    </div>
+                                </div>
+                            </main>
+                            <div class="content">
+                                <h3 style="color: white;">Product Retouching</h3>
+  
+                                <p style="color: white;">*Description*</p>                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="service-box-items-2" style="padding:10px; margin:5px; background-color: #898AC4; box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                            <main class="slider-main">
+                                <div class="slider-container">
+                                    <div class="slider-image-container">
+                                    <img
+                                        class="slider-image-before slider-image"
+                                    src="assets/img/slider/before.png"
+                                        alt="color photo"
+                                    />
+                                    <img
+                                        class="slider-image-after slider-image"
+                                        src="assets/img/slider/after.png"
+                                        alt="black and white"
+                                    />
+                                    </div>
+                                    <!-- step="10" -->
+                                    <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Percentage of before photo shown"
+                                    class="slider"
+                                    />
+                                    <div class="slider-line" aria-hidden="true"></div>
+                                    <div class="slider-button" aria-hidden="true">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                    >
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line
+                                        x1="128"
+                                        y1="40"
+                                        x2="128"
+                                        y2="216"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <line
+                                        x1="96"
+                                        y1="128"
+                                        x2="16"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="48 160 16 128 48 96"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                        <line
+                                        x1="160"
+                                        y1="128"
+                                        x2="240"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="208 96 240 128 208 160"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                    </svg>
+                                    </div>
+                                </div>
+                            </main>
+                            <div class="content">
+                                <h3 style="color: white;">Photo Services</h3>
+      
+                                <p style="color: white;">*Description*</p>                      </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="service-box-items-2" style="padding:10px; margin:5px; background-color: #898AC4; box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                            <main class="slider-main">
+                                <div class="slider-container">
+                                    <div class="slider-image-container">
+                                    <img
+                                        class="slider-image-before slider-image"
+                                    src="assets/img/slider/before.png"
+                                        alt="color photo"
+                                    />
+                                    <img
+                                        class="slider-image-after slider-image"
+                                        src="assets/img/slider/after.png"
+                                        alt="black and white"
+                                    />
+                                    </div>
+                                    <!-- step="10" -->
+                                    <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Percentage of before photo shown"
+                                    class="slider"
+                                    />
+                                    <div class="slider-line" aria-hidden="true"></div>
+                                    <div class="slider-button" aria-hidden="true">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                    >
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line
+                                        x1="128"
+                                        y1="40"
+                                        x2="128"
+                                        y2="216"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <line
+                                        x1="96"
+                                        y1="128"
+                                        x2="16"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="48 160 16 128 48 96"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                        <line
+                                        x1="160"
+                                        y1="128"
+                                        x2="240"
+                                        y2="128"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></line>
+                                        <polyline
+                                        points="208 96 240 128 208 160"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="16"
+                                        ></polyline>
+                                    </svg>
+                                    </div>
+                                </div>
+                            </main>
+                            <div class="content">
+                                <h3 style="color: white;">Real State Retouching</h3>
+                                <p style="color: white;">*Description*</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- Before After Sction End -->
+        
+        <!-- Service Sction Start -->
+        <section class="service-section fix section-padding-3">
+            <div class="container">
+                <div class="section-title style-2 text-center">
+                    <img src="assets/img/circle-title.png" alt="img" class="wow fadeInUp">
+                    <h6 class="mt-3 wow fadeInUp" data-wow-delay=".3s">Quality. Speed. Trust.</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".5s">
+                        Our Service <span>Promise</span>
                     </h2>
                 </div>
                 <div class="row">
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="service-box-items">
-                            <div class="service-image">
-                                <img src="assets/img/service/01.jpg" alt="img">
+                    <div class="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="service-box-items-2">
+                            <div class="icon">
+                                <img src="assets/img/icon/03.svg" alt="img">
                             </div>
-                            <div class="service-content">
+                            <div class="content">
                                 <h3>
-                                    Business strategy 
-                                        planning
+                                    24/7 Customer
+                                    Support
                                 </h3>
-                                <p>
-                                    Duise sagettis rosend accumsas magna onest curos adipiscine contacting the agency secondar
-                                </p>
-                                <a href="service.html" class="link-btn">more details <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                                <!-- <p>
+                                    Selmas ligula ans vestibulum morbi lacsus urna fell crases eleifen mauris ans
+                                </p> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="service-box-items">
-                            <div class="service-image">
-                                <img src="assets/img/service/02.jpg" alt="img">
+                    <div class="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="service-box-items-2">
+                            <div class="icon">
+                                <img src="assets/img/icon/04.svg" alt="img">
                             </div>
-                            <div class="service-content">
+                            <div class="content">
                                 <h3>
-                                    Data analysis
-                                        services
+                                    Right Language
+                                        Processing
                                 </h3>
-                                <p>
-                                    Duise sagettis rosend accumsas magna onest curos adipiscine contacting the agency secondar
-                                </p>
-                                <a href="service.html" class="link-btn">more details <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                                <!-- <p>
+                                    Selmas ligula ans vestibulum morbi lacsus urna fell crases eleifen mauris ans
+                                </p> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="service-box-items">
-                            <div class="service-image">
-                                <img src="assets/img/service/03.jpg" alt="img">
+                    <div class="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="service-box-items-2">
+                            <div class="icon">
+                                <img src="assets/img/icon/05.svg" alt="img">
                             </div>
-                            <div class="service-content">
+                            <div class="content">
                                 <h3>
-                                    Machine learning
-                                    models
+                                    Seamless data
+                                        Integration
                                 </h3>
-                                <p>
-                                    Duise sagettis rosend accumsas magna onest curos adipiscine contacting the agency secondar
-                                </p>
-                                <a href="service.html" class="link-btn">more details <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                                <!-- <p>
+                                    Selmas ligula ans vestibulum morbi lacsus urna fell crases eleifen mauris ans
+                                </p> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="service-box-items mb-0">
-                            <div class="service-image">
-                                <img src="assets/img/service/04.jpg" alt="img">
+                    <div class="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="service-box-items-2">
+                            <div class="icon">
+                                <img src="assets/img/icon/06.svg" alt="img">
                             </div>
-                            <div class="service-content">
+                            <div class="content">
                                 <h3>
-                                    Custom artificial
-                                        solutions
+                                    All Data-Driven 
+                                    Insights
+                                <!-- </h3>
+                                <p>
+                                    Selmas ligula ans vestibulum morbi lacsus urna fell crases eleifen mauris ans
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="service-box-items-2">
+                            <div class="icon">
+                                <img src="assets/img/icon/09.svg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h3>
+                                    Automated Lead 
+                                    Generation
                                 </h3>
                                 <p>
-                                    Duise sagettis rosend accumsas magna onest curos adipiscine contacting the agency secondar
+                                    Selmas ligula ans vestibulum morbi lacsus urna fell crases eleifen mauris ans
                                 </p>
-                                <a href="service.html" class="link-btn">more details <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="service-box-items-2">
+                            <div class="icon">
+                                <img src="assets/img/icon/10.svg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h3>
+                                    Multi-Language
+                                    Support
+                                </h3>
+                                <p>
+                                    Selmas ligula ans vestibulum morbi lacsus urna fell crases eleifen mauris ans
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="service-image-2">
+                            <img src="assets/img/service/05.jpg" alt="img">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Sction Start -->
+        <section class="about-section fix section-padding-2 pt-0">
+            <div class="about-wrapper-2 bg-cover" style="background-image: url('assets/img/about/about-bg.jpg');">
+                <div class="container-fluid">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                            <div class="about-image">
+                                <img src="assets/img/about/02.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-content">
+                                <div class="section-title style-2">
+                                    <h6 class="wow fadeInUp"><img src="assets/img/circle-title.png" alt="img"> about chatbot</h6>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        Perfect solutions business <br>
+                                        & <span>creative</span> work
+                                    </h2>
+                                </div>
+                                <ul class="about-list mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".3s">
+                                    <li>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#514DE0"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#514DE0"/>
+                                            </svg>
+                                            Real-World Transformations
+                                        </span>
+                                        Chatbot learns from interactions constantly improving responses
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#514DE0"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#514DE0"/>
+                                            </svg>
+                                            Integration with E-commerce
+                                        </span>
+                                        Monitor chatbot are interaction in real-time to ensure high-quality
+                                    </li>
+                                </ul>
+                                <a href="about.html" class="theme-btn theme-btn-2 wow fadeInUp" data-wow-delay=".5s">Learn more <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Popular Service Sction Start -->
+        <section class="popular-service-section fix section-padding-2 pt-0">
+            <div class="container">
+                <div class="section-title style-2 text-center">
+                    <img src="assets/img/circle-title.png" alt="img" class="wow fadeInUp">
+                    <h6 class="mt-3 wow fadeInUp" data-wow-delay=".3s">Exclusive services</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".5s">
+                        Comprehensive analytics <br> <span>and popular</span> services
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="service-left-items">
+                            <div class="popular-service-items">
+                                <div class="icon">
+                                    <img src="assets/img/icon/11.svg" alt="img">
+                                </div>
+                                <div class="content">
+                                    <h3>
+                                        Custom Chatbot <br>
+                                        Development
+                                    </h3>
+                                    <p>
+                                        Selmas ligula anser vestibulum morbi lacsus urna fell crases eleifen mauris meet the specific
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="popular-service-items style-2">
+                                <div class="content">
+                                    <h3>
+                                        Custom Chatbot <br>
+                                        Development
+                                    </h3>
+                                    <p>
+                                        Selmas ligula anser vestibulum morbi lacsus urna fell crases eleifen mauris meet the specific
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <img src="assets/img/icon/12.svg" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="popular-service-image">
+                            <img src="assets/img/service/Illustration.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="service-right-items">
+                            <div class="popular-service-items style-3">
+                                <div class="icon">
+                                    <img src="assets/img/icon/13.svg" alt="img">
+                                </div>
+                                <div class="content">
+                                    <h3>
+                                        Custom Chatbot <br>
+                                            Development
+                                    </h3>
+                                    <p>
+                                        Selmas ligula anser vestibulum morbi lacsus urna fell crases eleifen mauris meet the specific
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="popular-service-items style-2 style-3">
+                                <div class="content">
+                                    <h3>
+                                        Custom Chatbot <br>
+                                        Development
+                                    </h3>
+                                    <p>
+                                        Selmas ligula anser vestibulum morbi lacsus urna fell crases eleifen mauris meet the specific
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <img src="assets/img/icon/14.svg" alt="img">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -502,107 +1055,153 @@
             </div>
         </section>
 
-        <!-- Project Sction Start -->
-        <section class="project-section fix section-padding section-bg bg-cover" style="background-image: url('assets/img/project/line-shape.png');">
-            <div class="color-bg">
-                <img src="assets/img/project/color-bg.png" alt="img">
+        <!-- Mobile App Sction Start -->
+        <section class="mobile-app fix section-padding-2 bg-cover" style="background-image: url('assets/img/mobile-app-bg.jpg');">
+            <div class="container">
+                <div class="mobile-app-wrapper">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6 wow fadeInUp">
+                            <div class="mobile-thumb text-center">
+                                <img src="assets/img/mobile.png" alt="img">
+                                <div class="shape-img">
+                                    <img src="assets/img/mobile-shaape.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mobile-app-content">
+                                <div class="section-title style-2">
+                                    <h6 class="text-white wow fadeInUp"><img src="assets/img/circle-title-2.png" alt="img"> Our application</h6>
+                                    <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
+                                        Mobile apps drive the easy and
+                                        formal <span>revolution</span>
+                                    </h2>
+                                </div>
+                                <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">Download our mobile apps from android & app store</p>
+                                <div class="apps-button">
+                                    <a href="contact.html" class="wow fadeInUp" data-wow-delay=".3s">
+                                        <img src="assets/img/google-play.png" alt="img">
+                                    </a>
+                                    <a href="contact.html" class="wow fadeInUp" data-wow-delay=".5s">
+                                        <img src="assets/img/app-store.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-wrapper">
-                <h2 class="project-title text-center wow fadeInUp" data-wow-delay=".3s">
-                    Selected <br> <img src="assets/img/has.png" alt="img"> <span>Projects</span>
-                </h2>
-                <div class="row align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="project-image">
-                            <img src="assets/img/project/01.jpg" alt="img">
+        </section>
+
+        <!-- Testimonial Sction Start -->
+        <section class="testimonial-section fix section-padding-2">
+            <div class="container">
+                <div class="client-1">
+                    <img src="assets/img/testimonial/client-1.png" alt="img">
+                </div>
+                <div class="client-2">
+                    <img src="assets/img/testimonial/client-2.png" alt="img">
+                </div>
+                <div class="client-3">
+                    <img src="assets/img/testimonial/client-3.png" alt="img">
+                </div>
+                <div class="client-4">
+                    <img src="assets/img/testimonial/client-4.png" alt="img">
+                </div>
+                <div class="client-5">
+                    <img src="assets/img/testimonial/client-5.png" alt="img">
+                </div>
+                <div class="client-6">
+                    <img src="assets/img/testimonial/client-6.png" alt="img">
+                </div>
+                <div class="testimonial-wrapper" style="background-image: url('assets/img/testimonial/testimonial-bg.png');">
+                    <div class="section-title style-2 text-center">
+                        <img src="assets/img/circle-title.png" alt="img" class="wow fadeInUp">
+                        <h6 class="mt-3 wow fadeInUp" data-wow-delay=".3s">ultimate feature</h6>
+                        <h2 class="wow fadeInUp" data-wow-delay=".5s">
+                            Clients <span>feedback</span>
+                        </h2>
+                    </div>
+                    <div class="swiper testimonail-slider mt-3 mt-md-0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonail-content">
+                                    <div class="icon">
+                                        <img src="assets/img/testimonial/quote.png" alt="img">
+                                    </div>
+                                    <p>
+                                        "I love how easy it is to use this chatbot. Whether I’m looking for product recommendations or just need help with a task, it’s always there with the perfect response. A true game-changer!"
+                                    </p>
+                                    <div class="client-info">
+                                        <h3>Harry S. Adams</h3>
+                                        <span>Senior executive of microsoft</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="project-content">
-                            <span>25 july, 2024</span>
-                            <h3>
-                                <a href="project-details.html">
-                                    Machine <br>
-                                    learning
-                                </a>
-                            </h3>
-                            <p>
-                                Duise sagettise rosend acum oneste curos adipiscine contacting the everyday agency secondar overseas
-                            </p>
-                            <a href="project-details.html" class="theme-btn">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Sction Start -->
+        <section class="platform-section fix section-padding-2 bg-cover" style="background-image: url('assets/img/platform-bg.jpg');">
+            <div class="container">
+                <div class="section-title style-2 text-center">
+                    <img src="assets/img/circle-title.png" alt="img" class="wow fadeInUp">
+                    <h6 class="mt-3 wow fadeInUp" data-wow-delay=".3s">favorite platform</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".5s">
+                        Compatible with your <br> <span>preferred</span> platforms
+                    </h2>
+                </div>
+                <div class="platform-wrapper">
+                    <div class="platform-icon">
+                        <img src="assets/img/platform/messenger.png" alt="img">
+                    </div>
+                    <div class="platform-items">
+                        <div class="platform-icon">
+                            <img src="assets/img/platform/slack.png" alt="img">
+                        </div>
+                        <div class="platform-icon">
+                            <img src="assets/img/platform/chatgpt.png" alt="img">
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="project-content">
-                            <span>25 july, 2024</span>
-                            <h3>
-                                <a href="project-details.html">
-                                    Business <br>
-                                    analytics
-                                </a>
-                            </h3>
-                            <p>
-                                Duise sagettise rosend acum oneste curos adipiscine contacting the everyday agency secondar overseas
-                            </p>
-                            <a href="project-details.html" class="theme-btn">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
-                        </div>
+                    <div class="platform-icon">
+                        <img src="assets/img/platform/drive.png" alt="img">
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="project-image style-2">
-                            <img src="assets/img/project/02.jpg" alt="img">
-                        </div>
+                </div>
+                <div class="platform-wrapper-2">
+                    <div class="platform-icon">
+                        <img src="assets/img/platform/mailchimp.png" alt="img">
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="project-image">
-                            <img src="assets/img/project/03.jpg" alt="img">
-                        </div>
+                    <div class="platform-icon">
+                        <img src="assets/img/platform/dropbox.png" alt="img">
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="project-content">
-                            <span>25 july, 2024</span>
-                            <h3>
-                                <a href="project-details.html">
-                                    Marketing <br>
-                                    solutions
-                                </a>
-                            </h3>
-                            <p>
-                                Duise sagettise rosend acum oneste curos adipiscine contacting the everyday agency secondar overseas
-                            </p>
-                            <a href="project-details.html" class="theme-btn">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
-                        </div>
+                    <div class="platform-icon">
+                        <img src="assets/img/platform/whatsapp.png" alt="img">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Faq Sction Start -->
-        <section class="faq-section fix section-padding">
-            <div class="color-bg">
-                <img src="assets/img/faq/color-bg.png" alt="img">
-            </div>
+        <section class="faq-section fix section-padding-2">
             <div class="container">
-                <div class="faq-wrapper">
+                <div class="faq-wrapper style-2">
                     <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="faq-image-items">
-                                <div class="faq-image wow fadeInUp" data-wow-delay=".3s">
-                                    <img src="assets/img/faq/01.jpg" alt="img">
-                                </div>
-                                <div class="faq-image wow fadeInUp" data-wow-delay=".5s">
-                                    <img src="assets/img/faq/02.jpg" alt="img">
-                                </div>
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                            <div class="faq-image-2">
+                                <img src="assets/img/faq/faq.png" alt="img">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="faq-content">
-                                <div class="section-title">
-                                    <h6>
-                                        <img src="assets/img/star.png" alt="img"> key feature
-                                    </h6>
-                                    <h2>
-                                        Harnessing AI for
-                                        <span><b>business</b> success</span>
+                                <div class="section-title style-2">
+                                    <h6 class="wow fadeInUp"><img src="assets/img/circle-title.png" alt="img">Customer query</h6>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        Frequently asked customers
+                                        <span>question</span> & answer
                                     </h2>
                                 </div>
                                 <div class="faq-accordion">
@@ -610,36 +1209,48 @@
                                         <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
                                             <h5 class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                                    Consultation booking system
+                                                    How does the chatbot improve over time?
                                                 </button>
                                             </h5>
                                             <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordion">
                                                 <div class="accordion-body">
-                                                    Rhoncus duis urna lobortis at fusce cum accumsan tempor ads orci etiam litora dignissim ipsum lacinia hendrerit convallis vitae Consequat enim phasellus purus
+                                                    I love how easy it is to use this chatbot. Whether I’m looking for product recommendations or just need help with a task, it’s always there with the perfect response. A true game-changer
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="accordion-item  wow fadeInUp" data-wow-delay=".4s">
                                             <h5 class="accordion-header">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                                    Personalized dashboard
+                                                    Is my data safe when using the chatbot?
                                                 </button>
                                             </h5>
                                             <div id="faq1" class="accordion-collapse show" data-bs-parent="#accordion">
                                                 <div class="accordion-body">
-                                                    Rhoncus duis urna lobortis at fusce cum accumsan tempor ads orci etiam litora dignissim ipsum lacinia hendrerit convallis vitae Consequat enim phasellus purus
+                                                    I love how easy it is to use this chatbot. Whether I’m looking for product recommendations or just need help with a task, it’s always there with the perfect response. A true game-changer
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="accordion-item wow fadeInUp" data-wow-delay=".6s">
                                             <h5 class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                                    AI insights and analytics
+                                                    What languages does the chatbot support?
                                                 </button>
                                             </h5>
                                             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion">
                                                 <div class="accordion-body">
-                                                    Rhoncus duis urna lobortis at fusce cum accumsan tempor ads orci etiam litora dignissim ipsum lacinia hendrerit convallis vitae Consequat enim phasellus purus
+                                                    I love how easy it is to use this chatbot. Whether I’m looking for product recommendations or just need help with a task, it’s always there with the perfect response. A true game-changer
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay=".8s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                                    How accurate are the chatbot’s answers?
+                                                </button>
+                                            </h5>
+                                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    I love how easy it is to use this chatbot. Whether I’m looking for product recommendations or just need help with a task, it’s always there with the perfect response. A true game-changer
                                                 </div>
                                             </div>
                                         </div>
@@ -652,481 +1263,192 @@
             </div>
         </section>
 
-        <!-- Paralax Sction Start -->
-        <div class="paralax-section fix section-padding pt-0">
-            <div class="paralax-image">
-                <img src="assets/img/paralax-bg.jpg" alt="img">
-            </div>
-        </div>
-
-        <!-- Pricing Sction Start -->
-        <section class="pricing-section fix section-padding pt-0">
+        <!-- Brand Sction Start -->
+        <div class="brand-section section-padding-2 pt-0">
             <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title ml-200">
-                        <h6 class="wow fadeInUp">
-                            <img src="assets/img/star.png" alt="img"> popular package
-                        </h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                            Competitive package <br>
-                           <span> best AI <b>expertise</b></span>
-                        </h2>
-                    </div>
-                    <ul class="nav">
-                        <li class="nav-item wow fadeInUp" data-wow-delay=".3s">
-                            <a href="#Annual" data-bs-toggle="tab" class="nav-link">
-                                Annual
-                            </a>
-                        </li>
-                        <li class="nav-item wow fadeInUp" data-wow-delay=".5s">
-                            <a href="#Monthly" data-bs-toggle="tab" class="nav-link active">
-                                Monthly
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-content">
-                    <div id="Annual" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
-                                <div class="pricing-box-items">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/02.svg" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <h3>Standard</h3>
-                                        <p>Ideal for personal project</p>
-                                        <h2>$25</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Access AI tool</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Exclusive feature</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>24/7 support</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Discord access</span>
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="pricing.html" class="theme-btn">
-                                            Start Now <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                <h3 class="brand-title-2 text-center wow fadeInUp">Trusted by the great company</h3>
+                <div class="swiper brand-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand-image text-center">
+                                <img src="assets/img/brand/06.png" alt="img">
                             </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
-                                <div class="pricing-box-items">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/02.svg" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <h3>Professional</h3>
-                                        <p>Ideal for personal project</p>
-                                        <h2>$29</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Access AI tool</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Exclusive feature</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>24/7 support</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Discord access</span>
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="pricing.html" class="theme-btn">
-                                            Start Now <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-image text-center">
+                                <img src="assets/img/brand/07.png" alt="img">
                             </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
-                                <div class="pricing-box-items">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/02.svg" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <h3>Business</h3>
-                                        <p>Ideal for personal project</p>
-                                        <h2>$49</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Access AI tool</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Exclusive feature</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>24/7 support</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Discord access</span>
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="pricing.html" class="theme-btn">
-                                            Start Now <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-image text-center">
+                                <img src="assets/img/brand/08.png" alt="img">
                             </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
-                                <div class="pricing-box-items">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/02.svg" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <h3>Enterprise</h3>
-                                        <p>Ideal for personal project</p>
-                                        <h2>$54</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Access AI tool</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Exclusive feature</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>24/7 support</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Discord access</span>
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="pricing.html" class="theme-btn">
-                                            Start Now <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-image text-center">
+                                <img src="assets/img/brand/09.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-image text-center">
+                                <img src="assets/img/brand/10.png" alt="img">
                             </div>
                         </div>
                     </div>
-                    <div id="Monthly" class="tab-pane fade show active">
-                        <div class="row">
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                <div class="pricing-box-items">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/02.svg" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <h3>Standard</h3>
-                                        <p>Ideal for personal project</p>
-                                        <h2>$25</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Access AI tool</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Exclusive feature</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>24/7 support</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Discord access</span>
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="pricing.html" class="theme-btn">
-                                            Start Now <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How Too Work Sction Start -->
+        <section class="how-to-work-section fix section-padding-2 bg-cover" style="background-image: url('assets/img/how-work-bg.jpg');">
+            <div class="container">
+                <div class="section-title style-2 text-center">
+                    <img src="assets/img/circle-title-2.png" alt="img" class="wow fadeInUp">
+                    <h6 class="text-white mt-3 wow fadeInUp" data-wow-delay=".3s">How we works</h6>
+                    <h2 class="text-white wow fadeInUp" data-wow-delay=".5s">
+                        Understanding our <br>
+                        AI <span>chatbot’s</span> workflow
+                    </h2>
+                </div>
+                <div class="how-to-work-wrapper">
+                    <div class="how-too-work-items text-center wow fadeInUp">
+                        <div class="icon">
+                            <img src="assets/img/icon/15.svg" alt="img">
+                            <div class="bar-shape">
+                                <img src="assets/img/work-bar-shape.png" alt="img">
                             </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                <div class="pricing-box-items">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/02.svg" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <h3>Professional</h3>
-                                        <p>Ideal for personal project</p>
-                                        <h2>$29</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Access AI tool</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Exclusive feature</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>24/7 support</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Discord access</span>
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="pricing.html" class="theme-btn">
-                                            Start Now <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="content">
+                            <h3>Choose Plan</h3>
+                            <p>Start by signing up for our service with and proces simple</p>
+                        </div>
+                    </div>
+                    <div class="arrow-shape wow fadeInUp" data-wow-delay=".2s">
+                        <img src="assets/img/work-arrow.png" alt="img">
+                    </div>
+                    <div class="how-too-work-items text-center wow fadeInUp" data-wow-delay=".4s">
+                        <div class="icon">
+                            <img src="assets/img/icon/16.svg" alt="img">
+                            <div class="bar-shape">
+                                <img src="assets/img/work-bar-shape.png" alt="img">
                             </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                                <div class="pricing-box-items">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/02.svg" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <h3>Business</h3>
-                                        <p>Ideal for personal project</p>
-                                        <h2>$49</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Access AI tool</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Exclusive feature</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>24/7 support</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Discord access</span>
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="pricing.html" class="theme-btn">
-                                            Start Now <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="content">
+                            <h3>Choose Plan</h3>
+                            <p>Start by signing up for our service with and proces simple</p>
+                        </div>
+                    </div>
+                    <div class="arrow-shape wow fadeInUp" data-wow-delay=".6s">
+                        <img src="assets/img/work-arrow.png" alt="img">
+                    </div>
+                    <div class="how-too-work-items text-center wow fadeInUp" data-wow-delay=".7s">
+                        <div class="icon">
+                            <img src="assets/img/icon/17.svg" alt="img">
+                            <div class="bar-shape">
+                                <img src="assets/img/work-bar-shape.png" alt="img">
                             </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                                <div class="pricing-box-items">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/02.svg" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <h3>Enterprise</h3>
-                                        <p>Ideal for personal project</p>
-                                        <h2>$54</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Access AI tool</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Exclusive feature</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>24/7 support</span>
-                                        </li>
-                                        <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                                                <path d="M10.3553 12C10.0508 12 9.84772 11.8857 9.64467 11.6571L5.38071 6.85714C4.97462 6.4 4.97462 5.71429 5.38071 5.25714C5.7868 4.8 6.39594 4.8 6.80203 5.25714L10.3553 9.25714L18.2741 0.342857C18.6802 -0.114286 19.2893 -0.114286 19.6954 0.342857C20.1015 0.8 20.1015 1.48571 19.6954 1.94286L11.066 11.6571C10.9645 11.8857 10.6599 12 10.3553 12Z" fill="#CDCDCD"/>
-                                                <path d="M5.27919 12C4.97462 12 4.77157 11.8857 4.56853 11.6571L0.304569 6.85714C-0.101523 6.4 -0.101523 5.71429 0.304569 5.25714C0.71066 4.8 1.3198 4.8 1.72589 5.25714L5.98985 10.0571C6.39594 10.5143 6.39594 11.2 5.98985 11.6571C5.88833 11.8857 5.58376 12 5.27919 12ZM10.6599 6.05714C10.3553 6.05714 10.1523 5.94286 9.94924 5.71429C9.54315 5.25714 9.54315 4.57143 9.94924 4.11429L13.198 0.342857C13.6041 -0.114286 14.2132 -0.114286 14.6193 0.342857C15.0254 0.8 15.0254 1.48571 14.6193 1.94286L11.3706 5.71429C11.1675 5.94286 10.9645 6.05714 10.6599 6.05714Z" fill="#CDCDCD"/>
-                                            </svg>
-                                            <span>Discord access</span>
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="pricing.html" class="theme-btn">
-                                            Start Now <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="content">
+                            <h3>Choose Plan</h3>
+                            <p>Start by signing up for our service with and proces simple</p>
+                        </div>
+                    </div>
+                    <div class="arrow-shape wow fadeInUp" data-wow-delay=".8s">
+                        <img src="assets/img/work-arrow.png" alt="img">
+                    </div>
+                    <div class="how-too-work-items text-center wow fadeInUp" data-wow-delay=".9s">
+                        <div class="icon">
+                            <img src="assets/img/icon/18.svg" alt="img">
+                            <div class="bar-shape">
+                                <img src="assets/img/work-bar-shape.png" alt="img">
                             </div>
+                        </div>
+                        <div class="content">
+                            <h3>Choose Plan</h3>
+                            <p>Start by signing up for our service with and proces simple</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Message Sction Start -->
-        <section class="message-section fix section-bg section-padding">
-            <div class="bg-shape">
-                <img src="assets/img/about/bg-shape.png" alt="shape-img">
-            </div>
+        <!-- News Sction Start -->
+        <section class="news-section fix section-padding-2">
             <div class="container">
-                <div class="message-items">
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Have any query
-                       <span> send us <b>message</b></span>
+                <div class="section-title style-2 text-center">
+                    <img src="assets/img/circle-title.png" alt="img" class="wow fadeInUp">
+                    <h6 class="mt-3 wow fadeInUp" data-wow-delay=".3s">recent articles</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".5s">
+                        Story & <span>journal</span>
                     </h2>
-                    <div class="circle-bg wow fadeInUp" data-wow-delay=".3s">
-                        <img src="assets/img/circle-bg.png" alt="img">
-                    </div>
-                    <div class="lets-talk-items wow fadeInUp" data-wow-delay=".5s">
-                        <a href="contact.html" class="lets-circle">
-                            <i class="fa-sharp fa-regular fa-arrow-up-right"></i> <br>
-                            Let’s talk
-                        </a>
-                        <p>
-                            Duise sagittis accumsan magna on adipiscing laoreet ultrices magna consectetuer eiaculis rutrum morbie habitasse orci libero porttitor scelerisque acid vivamus molestie mollise
-                        </p>
-                    </div>
                 </div>
-            </div>
-            <div class="brand-section section-padding pb-0">
-                <div class="container">
-                    <div class="swiper brand-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="brand-image text-center">
-                                    <img src="assets/img/brand/01.png" alt="img">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="news-box-items">
+                            <div class="news-image">
+                                <img src="assets/img/news/01.jpg" alt="img">
+                                <div class="post-date">
+                                    <h4>08</h4>
+                                    <span>aug</span>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="brand-image text-center">
-                                    <img src="assets/img/brand/02.png" alt="img">
+                            <div class="news-content">
+                                <ul class="post-cat">
+                                    <li>
+                                        <i class="fa-regular fa-folder-open"></i>
+                                        reporting
+                                    </li>
+                                </ul>
+                                <h3>
+                                    <a href="news-details.html">Fames pellen tesque an vivamu duis tortor distract from</a>
+                                </h3>
+                                <a href="news-details.html" class="link-btn">Learn more <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="news-box-items">
+                            <div class="news-image">
+                                <img src="assets/img/news/02.jpg" alt="img">
+                                <div class="post-date">
+                                    <h4>09</h4>
+                                    <span>aug</span>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="brand-image text-center">
-                                    <img src="assets/img/brand/03.png" alt="img">
+                            <div class="news-content">
+                                <ul class="post-cat">
+                                    <li>
+                                        <i class="fa-regular fa-folder-open"></i>
+                                        analytics
+                                    </li>
+                                </ul>
+                                <h3>
+                                    <a href="news-details.html">Responsive & really understand what I’m asking to</a>
+                                </h3>
+                                <a href="news-details.html" class="link-btn">Learn more <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="news-box-items">
+                            <div class="news-image">
+                                <img src="assets/img/news/03.jpg" alt="img">
+                                <div class="post-date">
+                                    <h4>10</h4>
+                                    <span>aug</span>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="brand-image text-center">
-                                    <img src="assets/img/brand/04.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand-image text-center">
-                                    <img src="assets/img/brand/05.png" alt="img">
-                                </div>
+                            <div class="news-content">
+                                <ul class="post-cat">
+                                    <li>
+                                        <i class="fa-regular fa-folder-open"></i>
+                                        reporting
+                                    </li>
+                                </ul>
+                                <h3>
+                                    <a href="news-details.html">chatbot not only for answered my questions but also</a>
+                                </h3>
+                                <a href="news-details.html" class="link-btn">Learn more <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1135,28 +1457,31 @@
         </section>
 
         <!-- Footer Sction Start -->
-        <footer class="footer-section footer-bg">
+        <footer class="footer-section bg-cover" style="background-image: url('assets/img/footer-bg.jpg');">
             <div class="container">
-                <div class="footer-widgets-wrapper">
+                <div class="footer-widgets-wrapper style-2">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <a href="index-2.html">
+                                        <img src="assets/img/logo/black-logo.svg" alt="img">
+                                    </a>
+                                </div>
                                 <div class="footer-content">
-                                    <h3 class="mb-3">
-                                        Subscribe our 
-                                        newsletter
-                                    </h3>
-                                    <p>Join us today, get update everyday</p>
-                                    <div class="footer-input">
-                                        <input type="email" id="email" placeholder="Enter email...">
-                                        <button class="newsletter-btn" type="submit">
-                                           <img src="assets/img/circle-check.png" alt="img">
-                                        </button>
+                                    <p>
+                                        Chatbot not only answered question offered suggestions even thought of It’s like chatting with
+                                    </p>
+                                    <div class="social-icon">
+                                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
                                     <h3>Company</h3>
@@ -1164,7 +1489,7 @@
                                 <ul class="list-items">
                                     <li>
                                         <a href="about.html"> 
-                                            About us
+                                            Chat incubator
                                         </a>
                                     </li>
                                     <li>
@@ -1183,8 +1508,8 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="news.html"> 
-                                            Our blog
+                                        <a href="contact.html"> 
+                                            Partner program
                                         </a>
                                     </li>
                                     <li>
@@ -1198,22 +1523,22 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="login.html"> 
-                                            User login
+                                        <a href="contact.html"> 
+                                            System status
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-3 wow fadeInUp" data-wow-delay=".6s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Company</h3>
+                                    <h3>Integration</h3>
                                 </div>
                                 <ul class="list-items">
                                     <li>
                                         <a href="service.html"> 
-                                            Graphic design
+                                            Chat widget
                                         </a>
                                     </li>
                                     <li>
@@ -1228,91 +1553,67 @@
                                     </li>
                                     <li>
                                         <a href="service.html"> 
-                                            Art generate
+                                            Visual builder
                                         </a>
                                     </li>
                                     <li>
                                         <a href="service.html"> 
-                                            Face swap
+                                            Slack app
                                         </a>
                                     </li>
                                     <li>
                                         <a href="service.html"> 
-                                            Interior design
+                                            Education
                                         </a>
                                     </li>
                                     <li>
                                         <a href="service.html"> 
-                                            Face swap
+                                            Product demo
                                         </a>
                                     </li>
                                     <li>
                                         <a href="service.html"> 
-                                            Mockup create
+                                            Help desk
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-3 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="col-xl-4 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".8s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Instagram</h3>
+                                    <h3>Newsletter</h3>
                                 </div>
-                                <div class="row g-3">
-                                    <div class="col-md-6 col-sm-4 col-4">
-                                        <div class="footer-thumb">
-                                            <img src="assets/img/footer/gallery-1.jpg" alt="img">
-                                            <a href="index-2.html" class="icon">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                        </div>
+                                <div class="footer-content">
+                                    <p>
+                                        Don't hesitate to contact us if you're interested in collaborating or just want to chat
+                                    </p>
+                                    <div class="footer-input-2">
+                                        <input type="email" id="email" placeholder="Enter email...">
+                                        <button class="newsletter-btn" type="submit">
+                                            <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
+                                        </button>
                                     </div>
-                                    <div class="col-md-6 col-sm-4 col-4">
-                                        <div class="footer-thumb">
-                                            <img src="assets/img/footer/gallery-2.jpg" alt="img">
-                                            <a href="index-2.html" class="icon">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-4 col-4">
-                                        <div class="footer-thumb">
-                                            <img src="assets/img/footer/gallery-3.jpg" alt="img">
-                                            <a href="index-2.html" class="icon">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-4 col-4">
-                                        <div class="footer-thumb">
-                                            <img src="assets/img/footer/gallery-4.jpg" alt="img">
-                                            <a href="index-2.html" class="icon">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <p>We send interesting and relevant emails.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
+                <div class="footer-bottom style-2">
                     <div class="footer-bottom-wrapper">
-                        <div class="logo-img wow fadeInUp" data-wow-delay=".3s">
-                           <a href="index.html">
-                                <img src="assets/img/logo/white-logo.svg" alt="img">
-                           </a>
-                        </div>
-                        <p class="wow fadeInUp" data-wow-delay=".5s">Namespaceit © 2024. All Rights Reserved.</p>
-                        <div class="social-icon wow fadeInUp" data-wow-delay=".7s">
-                            <a href="#"><i class="fa-brands fa-discord"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
+                        <p class="wow fadeInUp" data-wow-delay=".3s">Namespaceit © 2024. All Rights Reserved.</p>
+                        <ul class="footer-menu wow fadeInUp" data-wow-delay=".5s">
+                            <li>
+                                <a href="contact.html">Privacy policy -</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact -</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Terms & conditions</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -1341,7 +1642,8 @@
         <script src="assets/js/wow.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
+        <!--<< Slider.js >>-->
+        <script src="assets/js/slider.js"></script>
     </body>
 
-<!-- Mirrored from aiforge.baseecom.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Jun 2025 18:57:38 GMT -->
 </html>
