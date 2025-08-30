@@ -2627,7 +2627,7 @@ span {
   position: absolute;
   top: 115%;
   inset-inline-start: 0;
-  min-width: 240px;
+  min-width: 340px;
   background: #120f0f;
   padding: 20px 0;
   z-index: 99999;
@@ -5149,6 +5149,10 @@ input.main-search-input::placeholder {
 }
 
 .pricing-box-items {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 30px;
   border-radius: 25px;
   border: 1px solid rgba(207, 208, 212, 0.2);
@@ -5862,6 +5866,7 @@ input.main-search-input::placeholder {
 }
 
 .service-box-items-2 {
+  height: 400px;
   margin-top: 30px;
   padding: 45px 35px;
   background-color: #F2F7FE;
