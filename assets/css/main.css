@@ -5823,6 +5823,10 @@ input.main-search-input::placeholder {
   display: flex;
   align-items: center;
   gap: 15px;
+  border-radius: 25px;
+  border: 1px solid rgba(207, 208, 212, 0.2);
+  background: #1D1D21;
+  min-height: 450px;
 }
 @media (max-width: 767px) {
   .service-box-items {
@@ -5844,10 +5848,7 @@ input.main-search-input::placeholder {
   border-radius: 20px;
 }
 .service-box-items .service-content {
-  border-radius: 25px;
-  border: 1px solid rgba(207, 208, 212, 0.2);
-  background: #1D1D21;
-  padding: 50px;
+  padding: 20px;
   max-width: 370px;
 }
 @media (max-width: 767px) {
