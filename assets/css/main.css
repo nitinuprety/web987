@@ -1913,6 +1913,7 @@ span {
 .how-too-work-items {
   margin-top: 30px;
   text-align: center;
+  width: 300px;
 }
 .how-too-work-items .icon {
   width: 171px;
@@ -1946,7 +1947,7 @@ span {
 
 .how-to-work-wrapper {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   gap: 40px;
 }
