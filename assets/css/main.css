@@ -1967,6 +1967,12 @@ span {
   }
 }
 
+.how-to-work-wrapper .circle-image {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
 .platform-wrapper {
   display: flex;
   align-items: center;
