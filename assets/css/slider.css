@@ -110,4 +110,5 @@
   place-items: center;
   pointer-events: none;
   box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+  /* visibility: hidden; */
 }
