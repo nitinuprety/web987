@@ -366,3 +366,71 @@ CSS TABLE OF CONTENTS
 
 })(jQuery); // End jQuery
 
+
+
+/*-----------------Image Modal------------------------------------*/
+
+const thumbs = document.querySelectorAll('.thumb');
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modalImg');
+const closeBtn = document.getElementById('closeBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentIndex = 0;
+
+function openModal(index) {
+currentIndex = index;
+const thumb = thumbs[index];
+modalImg.src = thumb.dataset.full;
+modalImg.alt = thumb.alt || 'Full image';
+modal.classList.add('open');
+modal.setAttribute('aria-hidden', 'false');
+}
+
+function closeModal() {
+modal.classList.remove('open');
+modal.setAttribute('aria-hidden', 'true');
+modalImg.src = '';
+}
+
+function showNext() {
+currentIndex = (currentIndex + 1) % thumbs.length;
+openModal(currentIndex);
+}
+
+function showPrev() {
+currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
+openModal(currentIndex);
+}
+
+// Attach events
+thumbs.forEach((thumb, i) => {
+thumb.addEventListener('click', () => openModal(i));
+});
+
+closeBtn.addEventListener('click', closeModal);
+nextBtn.addEventListener('click', showNext);
+prevBtn.addEventListener('click', showPrev);
+
+modal.addEventListener('click', e => {
+if (e.target === modal) closeModal();
+});
+
+document.addEventListener('keydown', e => {
+if (!modal.classList.contains('open')) return;
+if (e.key === 'Escape') closeModal();
+if (e.key === 'ArrowRight') showNext();
+if (e.key === 'ArrowLeft') showPrev();
+});
+
+// Mobile swipe support
+let startX = 0;
+modal.addEventListener('touchstart', e => {
+startX = e.touches[0].clientX;
+});
+modal.addEventListener('touchend', e => {
+let endX = e.changedTouches[0].clientX;
+if (endX - startX > 50) showPrev();
+if (startX - endX > 50) showNext();
+});
